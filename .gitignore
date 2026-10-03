@@ -1,0 +1,70 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Java/Gradle
+portalcraft-fabric/.gradle/
+portalcraft-fabric/build/
+portalcraft-fabric/out/
+portalcraft-fabric/*.iml
+portalcraft-fabric/.idea/
+portalcraft-fabric/*.log
+
+# Visual Studio / C++
+portalcraft-sm/*.sln
+portalcraft-sm/*.vcxproj*
+portalcraft-sm/*.vcxproj.filters
+portalcraft-sm/*.vcxproj.user
+portalcraft-sm/x64/
+portalcraft-sm/Debug/
+portalcraft-sm/Release/
+portalcraft-sm/ipch/
+portalcraft-sm/*.pdb
+portalcraft-sm/*.idb
+portalcraft-sm/*.ncb
+portalcraft-sm/*.suo
+portalcraft-sm/*.opensdf
+portalcraft-sm/*.sdf
+
+# SourceMod compiled
+portalcraft-sm/*.smx
+portalcraft-sm/*.ext.dll
+portalcraft-sm/*.ext.2.*.dll
+
+# Portal 2 game files (don't commit the whole game)
+*.vpk
+*.dll
+*.exe
+*.so
+portal2/addons/
+portal2/bin/
+portal2/cfg/
+portal2/maps/
+portal2/materials/
+portal2/models/
+portal2/particles/
+portal2/resource/
+portal2/scripts/
+portal2/sound/
+portal2/gameinfo.txt
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+bridge.log
+
+# Local config
+local.properties
+gradle.properties

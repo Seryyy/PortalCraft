@@ -1,0 +1,15 @@
+[package]
+name = "portalcraft-protocol"
+version = "0.1.0"
+edition = "2021"
+description = "Shared protocol types for PortalCraft (Portal 2 + Minecraft sync)"
+license = "MIT"
+authors = ["Seryyy"]
+categories = ["network-programming", "game-development"]
+
+[dependencies]
+serde = { workspace = true, features = ["derive"] }
+bincode = { workspace = true }
+uuid = { workspace = true, features = ["v4", "serde"] }
+anyhow = { workspace = true }
+parking_lot = { workspace = true }

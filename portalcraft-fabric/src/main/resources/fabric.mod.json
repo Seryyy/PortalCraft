@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "portalcraft",
+  "version": "0.1.0",
+  "name": "PortalCraft",
+  "description": "Minecraft side of PortalCraft - syncs blocks/inventory with Portal 2",
+  "authors": ["Seryyy"],
+  "contact": {
+    "homepage": "https://github.com/Seryyy/PortalCraft",
+    "sources": "https://github.com/Seryyy/PortalCraft"
+  },
+  "license": "MIT",
+  "icon": "assets/portalcraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.seryyy.portalcraft.PortalCraftMod"
+    ],
+    "client": [
+      "com.seryyy.portalcraft.client.PortalCraftClientMod"
+    ]
+  },
+  "mixins": [
+    "portalcraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "custom": {
+    "fabric-api": {
+      "rendering": "v1"
+    }
+  }
+}

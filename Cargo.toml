@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "portalcraft-protocol",
+    "portalcraft-bridge",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["Seryyy"]
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+bincode = "1.3"
+tokio = { version = "1.38", features = ["full"] }
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+parking_lot = "0.12"
+uuid = { version = "1.7", features = ["v4", "serde"] }

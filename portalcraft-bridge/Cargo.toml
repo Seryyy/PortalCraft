@@ -1,0 +1,17 @@
+[package]
+name = "portalcraft-bridge"
+version = "0.1.0"
+edition = "2021"
+description = "PortalCraft bridge daemon - connects Portal 2 (named pipe) to Minecraft (TCP)"
+license = "MIT"
+authors = ["Seryyy"]
+
+[dependencies]
+portalcraft-protocol = { path = "../portalcraft-protocol" }
+tokio = { workspace = true, features = ["full"] }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+parking_lot = { workspace = true }
+uuid = { workspace = true }
+bytes = "1.5"

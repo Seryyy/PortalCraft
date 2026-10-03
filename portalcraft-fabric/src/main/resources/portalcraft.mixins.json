@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "package": "com.seryyy.portalcraft.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    {
+      "target": "net.minecraft.server.network.ServerPlayerEntity",
+      "injectors": {
+        "defaultRequire": 1
+      }
+    },
+    {
+      "target": "net.minecraft.world.World",
+      "injectors": {
+        "defaultRequire": 1
+      }
+    }
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
